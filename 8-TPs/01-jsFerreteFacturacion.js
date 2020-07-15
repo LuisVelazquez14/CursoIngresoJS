@@ -28,7 +28,7 @@ function Sumar ()
 
     //SALIDA
     //salida por alert
-    alert("el total es " + total);
+    alert("el total es " + total.toFixed(2));
     }
 
 function Promedio () 
@@ -59,7 +59,7 @@ function Promedio ()
     
     //SALIDA
     //salida por alert
-    alert("el promedio es " + promedio)
+    alert("el promedio es " + promedio.toFixed(2))
 }
 
 function PrecioFinal () 
@@ -92,5 +92,5 @@ function PrecioFinal ()
     
     //SALIDA
     //salida de dato por alert
-    alert("el total c/impuesto del 21% es " + resultadoFinal);
+    alert("el total c/impuesto del 21% es " + resultadoFinal.toFixed(2));
 }

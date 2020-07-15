@@ -8,24 +8,75 @@ function Rectangulo ()
 {
     //ENTRADA
 
+    var largo;
+    var ancho;
+    var largoAnchoTotal;
+    var metrosTotal;
+
     //PROCESO
 
+    largo = txtIdLargo.value;
+    ancho = txtIdAncho.value;
+
+    largo = parseInt(largo);
+    ancho = parseInt(ancho);
+
+    largoAnchoTotal = largo * ancho;
+
+    alert("Total de metros cuadrado " + largoAnchoTotal.toFixed(2));
+
+    metrosTotal = largoAnchoTotal * 3;
+    
     //SALIDA
+
+    alert("Necesita " + metrosTotal.toFixed(2) + " metros de alambre");   
 
 }
 function Circulo () 
 {
-	    //ENTRADA
+	//ENTRADA
+    var radio;
+    var perimetro;
+    var metrosTotal;
 
     //PROCESO
+
+    radio = txtIdRadio.value;
+
+    radio = parseInt (radio);
+
+    perimetro = radio * Math.PI * 2;
+
+    alert("El total del perimetro es " + perimetro.toFixed(2));
+
+    metrosTotal = perimetro * 3;
     
     //SALIDA
+
+    alert("En total necesita " + metrosTotal.toFixed(2) + " metros");
+
 }
 function Materiales () 
 {
-	//ENTRADA
+    //ENTRADA
+    var largo;
+    var ancho;
+    var totalCemento;
+    var totalCal;
     
     //PROCESO
-    
+
+    largo = txtIdLargo.value;
+    ancho = txtIdAncho.value;
+
+    largo = parseInt(largo);
+    ancho = parseInt(ancho);
+
+    largoAnchoTotal = largo * ancho;
+
+    totalCemento = largoAnchoTotal * 2;
+    totalCal = largoAnchoTotal * 3;
+
     //SALIDA
+    alert("Para los " + largoAnchoTotal + " metros, se necesitan " + totalCemento + " bolsas de cemento y " + totalCal + " bolsas de cal")
 }
