@@ -51,7 +51,6 @@ function CentigradosFahrenheit ()
 
     celsiusFarenheit = temperatura * 9/5 + 32;
 
-
     //SALIDA
     //salida por alert
 
