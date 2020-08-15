@@ -1,5 +1,9 @@
 function mostrar()
 {
 
-	alert("ok");
+	for(var contador = 10; contador > 0; contador --)
+	{	
+		console.log(contador);
+	}
+	
 }

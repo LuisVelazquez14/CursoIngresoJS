@@ -7,12 +7,30 @@ function mostrar()
 	var contador;
 	var acumulador;
 	var respuesta;
-	contador=0;
-	acumulador=0;
-	respuesta='si';
+	var numeroIngresado;
+	
+	contador = 0;
+	acumulador = 0;
+	respuesta = true;
 
+	
+	do{	
+		
+		numeroIngresado = prompt ("ingrese numero");
+		
+		numeroIngresado = parseInt(numeroIngresado);
+		
+		acumulador = acumulador + numeroIngresado;		
+		
+		
+		respuesta = confirm ("desea agregar otro numero?");
+		
+		contador++;
 
-	txtIdSuma.value=acumulador;
-	txtIdPromedio.value=acumulador/contador;
+	}while (respuesta);
+
+	
+	txtIdSuma.value = acumulador;
+	txtIdPromedio.value = acumulador / contador;
 
 }//FIN DE LA FUNCIÓN
